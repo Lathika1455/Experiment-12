@@ -1,7 +1,57 @@
 # Experiment-12
 ## Pytest Python program for Addition
 # Aim:
+To write a Python program using Pytest for testing the addition of two numbers.
+
 # Algorithm: 
+1.Start the program.
+
+2.Define a function add(a, b) inside EX12.py that returns the sum of two numbers.
+
+3.Create a separate test file TEST_EX12.py.
+
+4.Import the add function from EX12.py into the test file.
+
+5.Write test cases using assert statements to check correctness.
+
+6.Run the test using: (-s for stdout to get to display the print statements)
+
+7.bash ppytest -s TEST_EX12.py
+
+8.If all tests pass, the program is correct.
+
 # Program:
-# Output
+
+EX12.py
+
+python def add(a, b): return a + b
+
+TEST_EX12.py
+
+python from EX12 import add
+
+def test_addition():
+
+```
+print()
+
+print("add(2, 3) =", add(2, 3))      
+assert add(2, 3) == 5
+
+print("add(-1, 1) =", add(-1, 1))     
+assert add(-1, 1) == 0
+
+print("add(0, 0) =", add(0, 0))     
+assert add(0, 0) == 0
+
+print("add(10, -5) =", add(10, -5))   
+assert add(10, -5) == 5
+```
+# Output:
+
+<img width="1073" height="297" alt="image" src="https://github.com/user-attachments/assets/64da5a2c-f915-4461-a6b4-279c1bd95793" />
+
 # Result
+
+Thus, the Pytest program for Addition (EX12 & TEST_EX12) was successfully written, executed, and tested. ✅
+
